@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#4263EC"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/blueview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/girl"
+        android:id="@+id/girl"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hii Sofia !"
+        android:id="@+id/sofia"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/girl"
+        android:layout_marginStart="20dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back "
+        android:id="@+id/welcome"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/sofia"
+        app:layout_constraintStart_toEndOf="@+id/girl"
+        android:layout_marginStart="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/today"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blueview"/>
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:text="Meeting with Omar"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@drawable/rectangle"
+        android:id="@+id/btnemail"
+        android:drawableRight="@drawable/ic_vector__11_"
+        android:drawableLeft="@drawable/ic_ellipse_4"
+        app:layout_constraintTop_toBottomOf="@+id/today"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"/>
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:text="Webinar on Gradle API"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle"
+        android:id="@+id/btnwebinar"
+        android:drawableLeft="@drawable/ic_ellipse_4"
+        app:layout_constraintTop_toBottomOf="@+id/btnemail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tomorrow"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/tomorrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnwebinar"/>
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:text="Front End Development"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@drawable/rectangle"
+        android:id="@+id/btndeveloment"
+        android:drawableLeft="@drawable/ic_ellipse_4"
+        app:layout_constraintTop_toBottomOf="@+id/tomorrow"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14th May 2021"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/may"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndeveloment"/>
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:text="Back End Development"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@drawable/rectangle"
+        android:id="@+id/btnbackend"
+        android:drawableLeft="@drawable/ic_ellipse_4"
+        app:layout_constraintTop_toBottomOf="@+id/may"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"/>
+    <View
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/circleg"
+        app:layout_constraintTop_toBottomOf="@+id/btnbackend"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/circleg"
+        app:layout_constraintTop_toTopOf="@id/circleg"
+        app:layout_constraintBottom_toBottomOf="@+id/circleg"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
